@@ -1,0 +1,31 @@
+.calendar {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 50px repeat(6, 1fr);
+    grid-gap: 20px;
+}
+
+.date,
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px 0;
+    background-color: lightgray;
+    color: black;
+    font-size: 1.2em;
+}
+
+.other-month {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: rgba(0, 0, 0, 0.6);
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: aqua;
+}

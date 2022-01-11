@@ -1,0 +1,110 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+}
+
+nav a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: gray;
+    color: white;
+    border-radius: 3px;
+}
+
+.welcome {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    position: relative;
+    color: transparent;
+}
+
+.welcome::before {
+    content: 'Welcome!';
+    position: absolute;
+    animation: anime 3s linear 1s infinite;
+    color: aqua;
+}
+
+@keyframes anime {
+    0% {
+        content: 'W|';
+    }
+    7% {
+        content: 'We|';
+    }
+    14% {
+        content: 'Wel|';
+    }
+    21% {
+        content: 'Welc|';
+    }
+    28% {
+        content: 'Welco|';
+    }
+    35% {
+        content: 'Welcom|';
+    }
+    42% {
+        content: 'Welcome|';
+    }
+    49% {
+        content: 'Welcome!|';
+    }
+    49%,
+    77% {
+        content: 'Welcome!|';
+    }
+    80% {
+        content: 'Welcome|';
+    }
+    83% {
+        content: 'Welcom|';
+    }
+    86% {
+        content: 'Welco|';
+    }
+    89% {
+        content: 'Welc|';
+    }
+    92% {
+        content: 'Wel|';
+    }
+    95% {
+        content: 'We|';
+    }
+    98% {
+        content: 'W|';
+    }
+    100% {
+        content: 'W|';
+    }
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form input,
+button {
+    height: 40px;
+    width: 30%;
+    font-size: 1.5em;
+    margin-top: 20px;
+    border: 1px solid;
+}
+
+button:hover {
+    background-color: transparent;
+    color: aqua;
+    border: 3px solid aqua;
+}
